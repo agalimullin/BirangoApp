@@ -1,0 +1,44 @@
+[
+  {
+    "city": "Москва",
+    "description": "Столица России",
+    "latitude": 55.8,
+    "longitude": 37.6
+  },
+  {
+    "city": "Москва",
+    "description": "бла",
+    "latitude": 55.8,
+    "longitude": 37.6
+  },
+  {
+    "city": "Москва",
+    "description": "блалалалал",
+    "latitude": 55.8,
+    "longitude": 37.6
+  },
+  {
+    "city": "Минск",
+    "description": "Столица Беларуссии",
+    "latitude": 53.9,
+    "longitude": 27.6
+  },
+  {
+    "city": "Варшава",
+    "description": "Столица Польши",
+    "latitude": 52.2,
+    "longitude": 21.0
+  },
+  {
+    "city": "Лондон",
+    "description": "Столица Великобритании",
+    "latitude": 51.5,
+    "longitude": -0.1
+  },
+  {
+    "city": "Киев",
+    "description": "Столица Украины",
+    "latitude": 50.5,
+    "longitude": 30.5
+  }
+]

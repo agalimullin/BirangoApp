@@ -1,0 +1,943 @@
+/*div {*/
+/*outline: 1px solid #000;*/
+/*}*/
+
+/*пустой верхний блок*/
+.empty {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 200;
+}
+
+/*шрифт для нашего сайта*/
+body {
+    font-family: Tahoma, sans-serif;
+    color: #040404;
+}
+
+table {
+    width: 100%;
+}
+
+/*.result table td {*/
+/*vertical-align: top;*/
+/*padding-top: 3px;*/
+/*}*/
+
+/*.result table td:first-child {*/
+/*width: 1%;*/
+/*white-space: nowrap;*/
+/*}*/
+
+.favorite_table {
+    min-width: 200px;
+}
+
+.favorite_table tr > td:nth-child(1) {
+    min-width: 180px;
+    width: 80%;
+}
+
+.favorite_table tr > td:nth-child(2) {
+    min-width: 16px;
+}
+
+.favorite_table td{
+    display: inline-table;
+}
+
+.favorite_table td .mark_mini.on {
+    float: right;
+}
+
+.favorite_table td li a {
+    float: left;
+    word-break: break-all;
+}
+
+/*устанавливаем для всех ссылок один стиль*/
+a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: #032ab9;
+    border: none;
+}
+
+/*отстут сверху для главного блока*/
+.main {
+    margin-top: 20px;
+}
+
+/*класс для фиксации блока*/
+.fix {
+    z-index: 200;
+    position: fixed;
+}
+.back-nav {
+    text-align: right;
+    float:right;
+    /*background-color: #fff;*/
+}
+.back-nav > div {
+    text-align: left;
+}
+/*блок с текстом приветсвия*/
+.jumbotron {
+    /*padding-top: 7%;*/
+    margin-bottom: 15px;
+}
+/*ширина градиента*/
+.size-grad {
+    padding-top: 10px;
+}
+/*ширина градиента для домашней страницы*/
+.home {
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.home .logo {
+    margin-bottom: 12px;
+}
+
+/*настройки текста Birank*/
+.logo {
+    display: inline-block;
+    padding-left: 25px;
+    color: #040404;
+    font-size: 24px;
+    /*background: url("../images/logo.png") no-repeat left center;*/
+}
+
+/*сдвиг влево формы Найти*/
+.search {
+    padding-left: 8px;
+}
+
+/*стили для кнопки "Найти"*/
+.btn-black {
+    background-color:#000;
+    color:#FFFFFF;
+    border-color:#292929;
+}
+
+/*стили кнопки "Найти" при наведении*/
+.btn-black:hover, .btn-black:focus {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+/*стили кнопки "Найти" при нажатии*/
+.btn-black:active {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.form-control {
+    color: #040404;
+}
+
+/* блок с парамерами расширенного поиска */
+.advanced-search {
+    display: inline-block;
+    padding-top: 3px;
+}
+.advanced-search .param-name {
+    margin-left: 5px;
+}
+.advanced-search .param-name,
+.advanced-search .param-value {
+    float: left;
+}
+.advanced-search.all-countries {
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px dashed;
+    margin: 0px 15px 5px 0px;
+}
+.advanced-search.strong-compare {
+    cursor: pointer;
+    border-bottom: 1px dashed;
+    margin-bottom: 5px;
+}
+.advanced-search.strong-compare .param-title {
+    display: inline-block;
+    margin-left: 3px;
+}
+.advanced-search.strong-compare .param-value {
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+}
+
+/*размеры флага*/
+.flag {
+    display: inline-block;
+    padding-left: 25px;
+}
+/*флаг России*/
+.flag.rus {
+    /*background: url("../images/ru.png") no-repeat left center;*/
+}
+/*флаг Англии*/
+.flag.eng {
+    /*background: url("../images/eng.png") no-repeat left center;*/
+}
+/*флаг Италии*/
+.flag.italy {
+    /*background: url("../images/ity.png") no-repeat left center;*/
+}
+/*флаг Франции*/
+.flag.france {
+    /*background: url("../images/france.png") no-repeat left center;*/
+}
+/*оступ сверху для блока Вкладок*/
+.middle {
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+
+/*отстут справа для вкладки "Язык"*/
+.tab {
+    padding-right: 50px;
+}
+/*курсор для вкладок*/
+.tab1 ,.tab2, .tab3 {
+    cursor: pointer;
+}
+/*размер и цвет текста блока навигации Язык/Вход*/
+.font-size {
+    font-size: 18px;
+    color: #040404;
+}
+/* Отступ между блоками язык/вход/профиль */
+.top-elements {
+    margin-right: 10px;
+}
+/* Отступ между блоками язык/вход/профиль */
+.padding-top-menu {
+    padding-top: 10px;
+}
+/* Параметры для блока авторизации/профиля */
+.user-window .block.abs {
+    min-width: 180px;
+}
+
+/*позиционировние relative для блочных элементов*/
+.rel {
+    position: relative;
+}
+
+/*Блок с содержимым вкладки*/
+.block {
+    display: none;
+    background-color: #fff;
+
+}
+.block.active {
+    display: block;
+}
+.block p {
+    cursor: pointer;
+}
+
+/*абсолютное позиционирование для блочных элементов*/
+.abs {
+    position: absolute;
+    z-index: 100;
+}
+.abs.box1 {
+    left: 0;
+}
+
+/*основной блок*/
+.content {
+    padding-top: 90px;
+    margin-bottom: 85px;
+}
+
+.fix-mod {
+    z-index: 500;
+    position: fixed;
+}
+/*иксированный Блок с изображением закладки*/
+.fix-mark {
+    z-index: 500;
+    margin-top: 15px;
+}
+
+/*Блок с изображением закладки*/
+.favorite_icon {
+    width: 36px;
+    height: 36px;
+    margin-top: 9px;
+    background: url("../../assets/images/mark_icon.png");
+    cursor: pointer;
+}
+/*Блок со списком Закладок*/
+.window li {
+    margin-bottom: 10px;
+}
+.window li:not(.divider) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.window li:first-of-type {
+    margin-bottom: 0;
+}
+.window li:last-of-type {
+    padding-left: 0;
+}
+/*блочные элементы в строку*/
+.inline {
+    display: inline-block;
+}
+/*блок для иконки закладки*/
+.window .mark_box {
+    display: inline-block;
+    margin-top: 10px;
+    width: 20px;
+    height: 30px;
+}
+
+/*блок с иконкой закладки*/
+.window .mark_mini.on {
+    /*background: url("../images/mark_small.png") no-repeat 0 0;*/
+}
+.mark_mini {
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    /*background: url("../images/mark_small.png")no-repeat 0 -16px;*/
+}
+
+/*стили для ссылок внутри списка избраных*/
+.window li a {
+    padding-left: 0;
+    padding-right: 5px;
+    color: #898989;
+    cursor: pointer;
+    white-space: normal;
+}
+
+.window .close {
+    padding-top: 6px;
+}
+
+.main-color {
+    cursor: pointer;
+}
+
+/*Блок найдено/выбор региона/отрасли*/
+.info {
+    padding-right: 30px;
+}
+.info p:not(:first-of-type){
+    cursor: pointer;
+}
+/*Жирный шрифт*/
+.bold {
+    font-weight: bold;
+}
+
+/*шапка модального окна*/
+.head h4{
+    padding-left: 15px;
+    color: #fff;
+}
+/*Основной блок модального окна*/
+.city {
+    padding: 20px 30px 30px;
+}
+.city .container-fluid {
+    padding-top: 15px;
+}
+/*колонки модального окна "Выбор региона"*/
+.city .row {
+    -webkit-column-width: 60px;
+    -moz-column-width: 60px;
+    column-width: 60px;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+}
+.type_name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.type_name:not(:first-of-type) {
+    padding-top: 10px
+}
+/*Заголовок модального окна "Выбор региона"*/
+.city h4 {
+    margin: 0 0 20px;
+    padding: 20px 35px;
+    color: #fff;
+}
+/*цвет поля ввода модального окна "Выбор региона"*/
+.city input {
+    border: 1px solid #1e6d95;
+}
+/* варианты для выбора региона и тематики в окнах с фильтрами */
+#regionModal p.checked,
+#activityModal p.checked, #countryModal p.checked {
+    display: block !important;
+}
+#regionModal p span,
+#activityModal p span, #countryModal p span {
+    cursor: pointer;
+}
+#regionModal p.checked span,
+#activityModal p.checked span, #countryModal p.checked span {
+    font-weight: bolder;
+    border-bottom: 1px dashed;
+    font-size: 13px;
+}
+#regionModal .filter-row,
+#activityModal .filter-row , #countryModal .filter-row{
+    margin-top: 20px;
+    text-align: right;
+}
+/* маленькая иконка загрузки*/
+.loading-small {
+    /*background: url(../images/loading-small.gif) no-repeat;*/
+    padding-left: 22px;
+}
+/* поле ввода в окнне поискового фильтра */
+.input-group {
+    width: 100%;;
+}
+/* пункты от фильтра слева */
+.text-right.dashed > span {
+    border-bottom: 1px dashed;
+}
+.text-right.filter-item {
+    cursor: default !important;
+    display: inline-block;
+    width: 100%;
+}
+.text-right.filter-item > span.text {
+    float: right;
+    margin-right: 5px;
+    width: calc(100% - 20px);
+}
+/*цвет кнопки модального окна "Выбор региона"*/
+.city .btn {
+    border-color: #1e6d95;
+}
+.city p {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+/*Блок история поиска*/
+.center .padding_right {
+    padding-right: 0;
+}
+/*часы для истории поиска*/
+.clock {
+    padding-top: 2px;
+    float: right;
+}
+
+/*главный блок с результатами запроса*/
+.all_result {
+    z-index: 60;
+    padding-left: 8px;
+}
+.all_result :first-of-type {
+    margin-top: 0;
+}
+
+/*Блок с результатом одной компании*/
+.result {
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+/*межстрочный интервал для блока result*/
+.result p {
+    margin-bottom: 1px;
+}
+/* заголовок в блоке result */
+.result h3 {
+    display: inline-block;
+    margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+/*цвет заголовка в блоке result*/
+.result h3 a:link {
+    color: #040404;
+}
+/*цвет заголовка в блоке result при наведении*/
+.result h3 a:hover {
+    color: #040404;
+    text-decoration: underline;
+}
+/*цвет заголовка после посещения ссылки в блоке result*/
+.result h3 a:visited {
+    color: #609;
+}
+/*Закладки компании в блоке результатов*/
+.marking {
+    vertical-align: top;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /*background: url('../images/mark_middle.png') no-repeat 0 -20px;*/
+}
+.marking.on {
+    /*background: url('../images/mark_middle.png') no-repeat 0 0;*/
+}
+
+/*строка с адресом компании*/
+.address {
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: #008C0C;
+    padding-right: 20px;
+    /*background: url("../images/map.png") right 0 no-repeat;*/
+}
+.address.disabled {
+    background: none;
+    cursor: default;
+}
+/*серый цвет текста*/
+.grey-text-color {
+    color: #898989!important;
+}
+
+/*блок для вывода карт*/
+.map {
+    display: none;
+    margin-top: 10px;
+}
+/*список иконок с картами*/
+.view {
+    padding: 0;
+    position: relative;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #cacaca;
+}
+.view li {
+    bottom: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+/*иконки с картами*/
+.map-element,
+.map-element.active {
+    width: 20px;
+    height: 20px;
+}
+.map-element:not(.disabled) {
+    cursor: pointer;
+}
+.map-element {
+    /*background: url('../images/maps_small.png');*/
+}
+.map-element.active {
+    /*background: url('../images/maps_big.png');*/
+}
+.map-element.map-element-yandex {
+    background-position: 0 0;
+}
+.map-element.map-element-google {
+    background-position: 60px 0;
+}
+.map-element.map-element-gis {
+    background-position: 40px 0;
+}
+.map-element.map-element-gis.disabled {
+    background-position: 20px 0;
+}
+.map-element.active.map-element-yandex {
+    background-position: 0 0;
+}
+.map-element.active.map-element-google {
+    background-position: 40px 0;
+}
+.map-element.active.map-element-gis {
+    background-position: 20px 0;
+}
+.map-element-card {
+    display: none;
+    width: 100%;
+    height: 400px;
+}
+
+.map iframe {
+    border: none !important;
+}
+.map-in-new-window > a {
+    border-bottom: 1px dashed;
+}
+
+/*footer*/
+#footer {
+    z-index: 200;
+    height: 60px;
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    /* box-shadow: 0 0 40px 20px #fff;*/
+}
+/*отстут сверху для элементов footer*/
+#footer .row {
+    margin-top: 5px;
+}
+/*Блок для смены темы*/
+.box {
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/*блок для смены темы "Розовый"*/
+#pink {
+    background-color: #ee8484;
+}
+/*блок для смены темы "Оранжевый"*/
+#orange {
+    background-color: #dfae6e;
+}
+/*блок для смены темы "Зеленый"*/
+#green {
+    background-color: #9baf6a;
+}
+/*блок для смены темы "Синий"*/
+#blue {
+    background-color: #8fa9e7;
+}
+
+/*окно затемнения*/
+.wrap {
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 400;
+}
+
+/*круг сверху*/
+.top {
+    opacity: 0.25;
+    top: -10px;
+    left: 60px;
+    position: fixed;
+    /*width: 250px;
+    height: 250px;*/
+    /*background: url("../images/circle_top_new.png") no-repeat;*/
+}
+/*большой круг*/
+.big {
+    opacity: 0.25;
+    right: 0;
+    bottom: 150px;
+    position: fixed;
+    width: 200px;
+    height: 330px;
+    /*background: url("../images/circle_big_new.png") no-repeat;*/
+}
+/*маленький круг снизу*/
+.sml {
+    opacity: 0.4;
+    z-index: 300;
+    left: 200px;
+    bottom: 0;
+    position: fixed;
+    width: 180px;
+    height: 120px;
+    /*background: url("../images/circle_small_new.png") no-repeat;*/
+}
+
+.company-card a:link, .company-card a:visited, .company-card a:active, .company-card a:hover {
+    color: #5bc0de;
+}
+
+/* Выделенный текст о окне поиска региона*/
+#regionModal mark, #activityModal mark {
+    padding: 0;
+    background-color: #ffff00;
+}
+/* Отображать в 1 колонку */
+.one-column {
+    -webkit-column-width: 100% !important;
+    -moz-column-width: 100% !important;
+    column-width: 100% !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+    column-count: 1 !important;
+}
+
+/* Раскрывающийся блок в настройках профиля  */
+.menu-toggle {
+    margin: 15px 0px;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px dashed;
+    line-height: 18px;
+    font-size: 21px;
+}
+.menu-toggle + div {
+    display: none;
+}
+
+/* button load more */
+.btn-load-more{
+    width:100%;
+    margin-top: 30px;
+}
+.btn-fixed-size{
+    width: auto;
+    color:#000;
+    margin-top: 5px;
+}
+
+/* pagination  */
+.mPagination{
+    margin-top:30px;
+}
+
+#mPagination a{
+    color: #000;
+}
+
+#mPagination .active{
+    background: #cacaca;
+}
+
+/* select in page settings edit profile*/
+.selEditPfile{
+    border: 1px solid #a9a9a9;
+    border-radius: 1px;
+}
+.lbl-profile{
+    font-weight: normal;
+    font-size: 18px;
+}
+.selEditPfile option{
+    background: #fff;
+}
+.selEditPfile option:first-child{
+    color: #909090;
+}
+.selEditPfile:focus{
+    outline: none;
+}
+
+/* Иконки провайдеров авторизации  */
+.provider-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.provider-icon.vk {
+    /*background: url('/image/social-icons.png') -124px 0px;*/
+}
+.provider-icon.fb {
+    /*background: url('/image/social-icons.png') 0px 0px;*/
+}
+.provider-icon.ya {
+    /*background: url('/image/social-icons.png') 526px 0px;*/
+}
+.provider-icon.gl {
+    /*background: url('/image/social-icons.png') 464px 0px;*/
+}
+.provider-icon.ok {
+    /*background: url('/image/social-icons.png') -93px 0px;*/
+}
+.provider-icon:hover {
+    filter: contrast(150%);
+    -webkit-filter: contrast(150%);
+}
+
+/* basic table class */
+.table tr td{
+    text-align: left;
+}
+.table tr th{
+    text-align: left;
+}
+.table tr td a{
+    color: #3482be;
+    padding-right: 5px;
+}
+
+/* Блок список компаний пользователя */
+.layou_companies{
+    margin-top:50px; width:100%; border-top:1px solid #000; padding:10px; max-width: 1000px; margin: 0 auto; margin-bottom: 60px;
+}
+.settings {
+    max-width: 750px;
+    min-width: 500px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+.settings input[type=text],
+.settings input[type=password],
+.settings select {
+    width: 350px;
+    font-size: 18px;
+    margin: 0 !important;
+    padding: 0 7px;
+    display: inline-block;
+}
+.settings-title {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/* div layout action my company on list results of serch */
+.actionsListSearch{
+    max-width: 50px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+.actionsListSearch a i{
+    font-size: 20px;
+}
+
+/* container settings */
+.container-settings{
+    margin-bottom: 55px;
+}
+.container-settings .panel-body{
+
+}
+.container-settings .panel-body input{
+    border:2px solid #cacaca;
+}
+
+/*custom modal mycompany action*/
+#modalMyCompany .modal-body{
+    height: auto;
+}
+
+/*activate company upload files*/
+.img-preview{
+    max-width: 150px;
+    max-height: 150px;
+    display: inline-block;
+}
+.wrapp-images {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #b8b4b4;
+    visibility: hidden;
+}
+.wrapp-imagesd{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #b8b4b4;
+}
+.fa-file-uploaded{
+    font-size: 150px;
+    color: #1fa67a;
+}
+.file-panel{
+    display: inline-block;
+    padding:4px;
+    border:1px solid #cecece;
+}
+.del-uploaded-file{
+    display: block;
+}
+.error-upload{
+    visibility: hidden;
+}
+#fadel{
+    display: block;
+}
+/*table inverse */
+#tblinverse{
+    background-color: #fff;
+    color:#000;
+    border: 1px solid #ddd;
+}
+#tblinverse tr td:hover{
+}
+#tblinverse tr td a{
+    color: #ccd907;
+    text-decoration: underline;
+}
+#tblinverse tr td, #tblinverse tr th{
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.table-inverse td, .table-inverse th, .table-inverse thead th {
+    border-color: #55595c;
+}
+.table-inverse {
+    color: #eceeef;
+    background-color: #373a3c;
+}
+.typetarifradio{
+    float: right;width: 21px;
+    height: 21px;
+
+}
+.td-selected{
+    background-color: #cdf882;
+    color:#000;
+}
+.status-tarif.active{
+    color:#06C;
+    font-weight: bold;
+}
+.status-tarif.deactive{
+    color: #cc3c15;
+    font-weight: bold;
+}
+#fatrue{
+    color: #4074a9;
+    font-size: 20px;
+}
+#fafalse{
+    color: #a53636;
+    font-size: 20px;
+}
+.see-more, .see-less{
+    cursor: pointer;
+    color: #06C;
+}
+
+/* Autocomplete */
+.ui-autocomplete {
+    z-index: 300 !important;
+}
+a.link-unactive{
+    color: #cacaca;
+}
+a.link-unactive:hover{
+    color: #cacaca;
+}
