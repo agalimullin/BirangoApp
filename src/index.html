@@ -5,9 +5,13 @@
     <title>birangoApp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <script src="app/main/yandex-maps.js"></script>
+    <script src="app/main/gis-maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUdO-x1ClnmKPR0gqf-sI_u2QP36qjAOk"></script>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="app/css/maps.css">
     <link rel="stylesheet" href="app/css/index.css">
     <link rel="stylesheet" href="app/css/fromBirango.css">
     <link rel="stylesheet" href="app/css/modalWindows.css">
@@ -77,11 +81,25 @@
         </div>
     </div>
 </nav>
-<div class="container" id="content" style="margin-top: 100px;">
-    <div class="col-lg-8" ng-repeat="place in places">
+
+<div class="bundle" ng-repeat="place in places" style="margin-top: 100px;"
+     data-latitude="{{place.latitude}}" data-longitude="{{place.longitude}}" id="{{$index}}">
         <h2>{{place.city}}</h2>
         <p>{{place.description}}</p>
-    </div>
+        <ul class="view">
+            <li class="active map-element map-element-yandex"
+                ng-click="switchTabs($event)" data-target="yandexMapContainer{{$index}}">
+                <a href="#" onclick="return false;"></a>
+            </li>
+            <li class="map-element map-element-google"
+                ng-click="switchTabs($event)" data-target="googleMapContainer{{$index}}">
+                <a href="#" onclick="return false;"></a>
+            </li>
+            <li class="map-element map-element-gis"
+                ng-click="switchTabs($event)" data-target="gisMapContainer{{$index}}">
+                <a href="#" onclick="return false;"></a>
+            </li>
+        </ul>
 </div>
 
 <!-- build:js(src) scripts/vendor.js -->
