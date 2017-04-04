@@ -1,15 +1,6 @@
 var app = angular.module('birangoApp');
 app.controller('MainController', ['$scope', '$http', function ($scope, $http) {
 
-    this.objects = {};
-
-    //получаем данные с сервака
-    $http.get('objects.json').success(function (data, status, headers, config) {
-        $scope.objects = data;
-    }).error(function (data, status, headers, config) {
-        console.log("No data found..");
-    });
-
     /*------------------------ МОДАЛКИ ----------------------------*/
     angular.element(document).ready(function () {
         var favoriteModal = $("#favoriteModal");
@@ -38,14 +29,24 @@ app.controller('MainController', ['$scope', '$http', function ($scope, $http) {
     //массив, который временно хранит найденные по запросу объекты
     $scope.places = [];
 
-    $scope.printPlace = function () {
-        var query = String(this.query);
-        $scope.places = [];
-        localStorage['birangoSearch_'+query] = query;
-        angular.forEach($scope.objects, function (value, key) {
-            if (value.city === query) {
-                $scope.places.push({city: value.city, description: value.description});
+    $scope.printPlace = function (query) {
+        //получаем данные с сервака
+        $http.get('objects.json').success(function (data, status, headers, config) {
+            console.log(data);
+            var flag = false;
+            $scope.places = [];
+            localStorage['birangoSearch_' + query] = query;
+            angular.forEach(data, function (value, key) {
+                if (value.city.includes(query)){
+                    flag = true;
+                    $scope.places.push(value)
+                }
+            });
+            if (flag === false){
+                $scope.places.push({city: "Ничего не найдено"});
             }
+        }).error(function (data, status, headers, config) {
+            console.log("No data found..");
         });
     };
 }]);
